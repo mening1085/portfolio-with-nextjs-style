@@ -9,9 +9,9 @@ type CardProps = {
 function Card({ children }: CardProps) {
   return (
     <div className="grid grid-cols-[70px_1fr_70px] items-center justify-center">
-      <div className="border-b border-dashed h-full w-full"></div>
+      <div className="dark:border-gray-900 border-b border-dashed h-full w-full"></div>
       {children}
-      <div className="border-b border-dashed h-full w-full"></div>
+      <div className="dark:border-gray-900 border-b border-dashed h-full w-full"></div>
     </div>
   );
 }
@@ -19,15 +19,15 @@ function Heroes() {
   return (
     <div className="py-10">
       <Card>
-        <div className="flex w-full border-x border-dashed">
+        <div className="flex w-full dark:border-gray-900 border-x border-dashed">
           <div className="w-1/3 h-[70px]"></div>
-          <div className="border-x border-dashed w-1/3 h-[70px]"></div>
+          <div className="dark:border-gray-900 border-x border-dashed w-1/3 h-[70px]"></div>
           <div className="w-1/3 h-[70px]"></div>
         </div>
       </Card>
 
       <Card>
-        <div className="w-full border border-dashed border-gray-200 py-6">
+        <div className="w-full dark:border-gray-900 border border-dashed border-gray-200 py-6">
           <h1 className="text-[max(48px,min(5vw,76px))] text-center font-semibold">
             Full Stack Developer
           </h1>
@@ -35,7 +35,7 @@ function Heroes() {
       </Card>
 
       <Card>
-        <div className="w-full py-4 flex justify-center items-center border-x border-b border-dashed border-gray-200">
+        <div className="w-full py-4 flex justify-center items-center dark:border-gray-900 border-x border-b border-dashed border-gray-200">
           <div className="w-3/4">
             <div className="flex items-center justify-center gap-4 text-lg">
               <div>
@@ -63,8 +63,7 @@ function Heroes() {
                     className="object-cover"
                     src="/images/me2.jpg"
                     alt="Profile"
-                    sizes="100vw"
-                    objectFit="cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     fill
                   />
                 </div>
@@ -75,15 +74,15 @@ function Heroes() {
       </Card>
 
       <Card>
-        <div className="w-full flex justify-center items-center border-x border-b border-dashed border-gray-200">
+        <div className="w-full flex justify-center items-center dark:border-gray-900 border-x border-b border-dashed border-gray-200">
           <div className="w-1/3 text-lg">
             <div className="flex justify-center">
-              <div className="w-full border-x p-9 border-dashed">
+              <div className="w-full dark:border-gray-900 border-x p-9 border-dashed">
                 <div className="flex justify-center gap-4">
-                  <button className="bg-black px-3 py-2 text-white rounded-md hover:bg-black/75">
+                  <button className="bg-black dark:bg-white px-3 py-2 text-white dark:text-black rounded-md hover:bg-black/75 hover:dark:bg-gray-200">
                     Download CV
                   </button>
-                  <button className="border border-black/50 px-3 py-2 text-black rounded-md hover:bg-gray-100">
+                  <button className="dark:border-white border border-black/50 px-3 py-2 text-black dark:text-white rounded-md hover:bg-gray-100 hover:dark:bg-black/25">
                     See Projects
                   </button>
                 </div>
@@ -101,13 +100,13 @@ function Heroes() {
       </Card>
 
       <div className="grid grid-cols-[70px_1fr_70px] items-center justify-center">
-        <div className="border-dashed h-full w-full"></div>
-        <div className="flex w-full border-x border-dashed">
+        <div className="dark:border-gray-900 border-dashed h-full w-full"></div>
+        <div className="flex w-full dark:border-gray-900 border-x border-dashed">
           <div className="w-1/3 h-[70px]"></div>
-          <div className="border-x border-dashed w-1/3 h-[70px]"></div>
+          <div className="dark:border-gray-900 border-x border-dashed w-1/3 h-[70px]"></div>
           <div className="w-1/3 h-[70px]"></div>
         </div>
-        <div className=" border-dashed h-full w-full"></div>
+        <div className="dark:border-gray-900 border-dashed h-full w-full"></div>
       </div>
     </div>
   );

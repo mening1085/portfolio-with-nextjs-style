@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { Icon } from "@iconify/react";
+
 type CardProps = {
   children: ReactNode;
 };
@@ -26,7 +27,7 @@ function BoxSkill({ children }: CardProps) {
 }
 function Skill() {
   return (
-    <>
+    <div id="skill">
       <div className="text-center mt-12">
         <div className="text-4xl font-semibold">
           What are my areas of expertise?
@@ -44,7 +45,6 @@ function Skill() {
           <span className="text-black">🐣</span>
         </div>
       </div>
-
       <div className="grid grid-cols-3 gap-4 mt-6">
         <CardSkill>
           <div className="text-lg font-semibold">🛠️ Technical Skills</div>
@@ -106,7 +106,7 @@ function Skill() {
           </BoxSkill>
         </CardSkill>
       </div>
-    </>
+    </div>
   );
 }
 

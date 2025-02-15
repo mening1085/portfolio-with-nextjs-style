@@ -13,9 +13,10 @@
     --foreground: #ededed;
   }
 }
-
+html {
+  scroll-behavior: smooth !important;
+}
 body {
-  color: var(--foreground);
-  background: var(--background);
+  @apply bg-white text-[#0a0a0a] dark:bg-[#0a0a0a] dark:text-white;
   font-family:  Arial, Helvetica, sans-serif;
 }

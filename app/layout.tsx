@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Anuphan } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 import Header from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
 
@@ -20,16 +20,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const customMenuItems = [
-    { label: "Home", href: "/" },
-    { label: "About", href: "#about" },
-    { label: "Portfolio", href: "#portfolios" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "home" },
+    { label: "About", href: "about" },
+    { label: "Skill", href: "skill" },
+    { label: "Portfolio", href: "portfolios" },
+    { label: "Contact", href: "contact" },
   ];
 
   return (
     <html lang="en">
       <body className={`${anuphan.className}`}>
-        <div className="min-h-screen">
+        <div className="min-h-screen" id="home">
           <Header logoText="XMMEENN" menuItems={customMenuItems} />
 
           <main className="container mx-auto pt-[64px]">

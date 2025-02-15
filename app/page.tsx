@@ -1,4 +1,5 @@
 import Heroes from "@/components/sections/Heroes";
+import Project from "@/components/sections/Project";
 import Skill from "@/components/sections/Skill";
 
 export default function Home() {
@@ -7,6 +8,8 @@ export default function Home() {
       <Heroes />
 
       <Skill />
+
+      <Project />
     </>
   );
 }
