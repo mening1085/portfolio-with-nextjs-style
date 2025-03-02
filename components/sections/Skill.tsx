@@ -7,7 +7,7 @@ type CardProps = {
 
 function CardSkill({ children }: CardProps) {
   return (
-    <div className="border border-gray-200 hover:border-gray-400 transition-all duration-200 ease-in-out p-4 rounded-lg space-y-2">
+    <div className="border border-gray-200 dark:border-gray-800 hover:border-gray-400 transition-all duration-200 ease-in-out p-4 rounded-lg space-y-2">
       {children}
     </div>
   );
@@ -28,7 +28,7 @@ function BoxSkill({ children }: CardProps) {
 function Skill() {
   return (
     <div id="skill">
-      <div className="text-center mt-12">
+      <div className="text-center mt-12 px-16">
         <div className="text-4xl font-semibold">
           What are my areas of expertise?
         </div>{" "}
@@ -45,7 +45,7 @@ function Skill() {
           <span className="text-black">🐣</span>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-4 mt-6">
+      <div className="grid grid-cols-3 gap-4 mt-6 px-16">
         <CardSkill>
           <div className="text-lg font-semibold">🛠️ Technical Skills</div>
           <BoxSkill>

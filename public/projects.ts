@@ -1,4 +1,14 @@
-const projects = [
+import img_bio from "@/public/images/freelance/bio-nu.png";
+import img_categorize_group from "@/public/images/freelance/categorize-group.png";
+import img_chemistry_nu from "@/public/images/freelance/chemistry-nu.png";
+import img_colab_booking_bio_nu from "@/public/images/freelance/colab-booking-bio-nu.png";
+import img_cv_xmmeenn from "@/public/images/freelance/cv-xmmeenn.png";
+import img_physics_nu from "@/public/images/freelance/physics-nu.png";
+import img_program_tonkatsu from "@/public/images/freelance/program-tonkatsu.png";
+import img_queue_calling from "@/public/images/freelance/queue-calling.png";
+import img_tools_system from "@/public/images/freelance/tool-system.png";
+
+export const projects = [
   {
     project: "IOD",
     description:
@@ -243,4 +253,35 @@ const projects = [
   },
 ];
 
-export default projects;
+export const freelance = [
+  {
+    project: "Biology website",
+    description:
+      "เป็นเว็บไซต์ที่เกี่ยวกับวิชาชีววิทยา ที่จะแสดงข้อมูลต่างๆเกี่ยวกับวิชาชีววิทยา",
+    stack: "Nuxt.js, Laravel, MySql",
+    detail: `<div class="font-semibold"><div><p class="text-gray-800 dark:text-gray-100">- เก็บ Requiredment</p><p class="text-gray-800 dark:text-gray-100">- ออกแบบ UI</p></div><div><p class="text-gray-800 dark:text-gray-100">- ออกแบบ Database</p><p class="text-gray-800 dark:text-gray-100">- Frontend</p><p class="text-gray-800 dark:text-gray-100">- Backoffice</p><p class="text-gray-800 dark:text-gray-100">- Backend</p><p class="text-gray-800 dark:text-gray-100">- Deploy</p></div></div>`,
+    link: "https://biologynu.com/",
+    image: img_bio,
+    year: "2024",
+  },
+  {
+    project: "Physics website",
+    description:
+      "เป็นเว็บไซต์ที่เกี่ยวกับวิชาฟิสิกส์ ที่จะแสดงข้อมูลต่างๆเกี่ยวกับวิชาฟิสิกส์",
+    stack: "Nuxt.js, Laravel, MySql",
+    detail: `<div class="font-semibold"><div><p class="text-gray-800 dark:text-gray-100">- เก็บ Requiredment</p><p class="text-gray-800 dark:text-gray-100">- ออกแบบ UI</p></div><div><p class="text-gray-800 dark:text-gray-100">- ออกแบบ Database</p><p class="text-gray-800 dark:text-gray-100">- Frontend</p><p class="text-gray-800 dark:text-gray-100">- Backoffice</p><p class="text-gray-800 dark:text-gray-100">- Backend</p><p class="text-gray-800 dark:text-gray-100">- Deploy</p></div></div>`,
+    link: "https://biologynu.com/",
+    image: img_physics_nu,
+    year: "2024",
+  },
+  {
+    project: "chemistry website",
+    description:
+      "เป็นเว็บไซต์ที่เกี่ยวกับวิชาเคมี ที่จะแสดงข้อมูลต่างๆเกี่ยวกับวิชาเคมี",
+    stack: "Nuxt.js, Laravel, MySql",
+    detail: `<div class="font-semibold"><div><p class="text-gray-800 dark:text-gray-100">- เก็บ Requiredment</p><p class="text-gray-800 dark:text-gray-100">- ออกแบบ UI</p></div><div><p class="text-gray-800 dark:text-gray-100">- ออกแบบ Database</p><p class="text-gray-800 dark:text-gray-100">- Frontend</p><p class="text-gray-800 dark:text-gray-100">- Backoffice</p><p class="text-gray-800 dark:text-gray-100">- Backend</p><p class="text-gray-800 dark:text-gray-100">- Deploy</p></div></div>`,
+    link: "https://biologynu.com/",
+    image: img_chemistry_nu,
+    year: "2024",
+  },
+];
